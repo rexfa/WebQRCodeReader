@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="js/webcamera.js"></script>
+    <script type="text/javascript" src="js/qrcodereader.js"></script>
+</head>
+<body>
+    <video id="videoCamera" autoplay>
+        您的浏览器不支持 video 标签。
+    </video>
+    <canvas id="canvasCamera"></canvas>
+    <p id="divLog"></p>
+    <script type="text/javascript">    
+    window.onload = function () {
+        var canvas=document.getElementById('canvasCamera');
+        var log=document.getElementById('divLog');
+        var video=document.getElementById('videoCamera');
+        setCanvas(video,canvas,log);
+    }
+    </script>
+    <!--https://rct1.19w.me/t1/wokerfile.html-->
+</body>
+</html>
